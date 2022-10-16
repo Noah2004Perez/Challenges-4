@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+:root{
+    /* Primary */
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+--Transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+--Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+}
+
+article.content1,
+article.content2,
+article.content3{
+    background-color: var(--Bright-orange);
+    padding: 50px;
+    width: 350px;
+}
+
+article.content2{
+    background-color: var(--Dark-cyan);
+}
+
+article.content3{
+    background-color: var(--Very-dark-cyan);
+}
+
+    h2{
+    color: var(--Very-light-gray);
+    margin: 30px 0px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+    p{
+    color: var(--Transparent-white);
+    width: 220px;
+    line-height: 25px;
+    margin-bottom: 116px;
+    }
+
+
+    button.boton-1,
+    button.boton-2,
+    button.boton-3{
+        color: var(--Bright-orange);
+        font-weight: 600;
+        width: 140px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    button.boton-2{
+        color: var(--Dark-cyan);
+    }
+
+    button.boton-3{
+        color: var(--Very-dark-cyan);
+    }
+
+    button.boton-1:hover,
+    button.boton-2:hover,
+    button.boton-3:hover{
+        background-color: var(--Bright-orange);
+        color: var(--Very-light-gray);
+    }
+
+    button.boton-2:hover{
+        background-color: var(--Dark-cyan);
+    }
+
+    button.boton-3:hover{
+        background-color: var(--Very-dark-cyan);
+    }
+
+    @media screen and (min-width: 330px) and (max-width: 420px){
+    main{
+        flex-direction: column;
+    }
+}
